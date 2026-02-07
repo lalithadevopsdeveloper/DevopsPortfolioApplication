@@ -1,100 +1,216 @@
-/* Global Reset */
+/* =====================
+   Global Reset
+===================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* =====================
+   Base Styles
+===================== */
 body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background: #f9f9f9;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  color: #1f2933;
+  background: #f5f7fb;
 }
 
-/* Hero / Header */
-.hero {
-  background: #0a0f2a;
-  color: #fff;
-  text-align: center;
+a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   Layout Container
+===================== */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+/* =====================
+   Header / Hero
+===================== */
+.header {
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
+  color: #ffffff;
   padding: 80px 20px;
+  text-align: center;
 }
 
-.hero-content h1 {
+.header h1 {
   font-size: 3rem;
   font-weight: 700;
 }
 
-.hero-content p {
+.subtitle {
   font-size: 1.3rem;
-  margin-top: 8px;
-  font-weight: 300;
+  margin-top: 10px;
+  opacity: 0.95;
 }
 
-.btn {
-  display: inline-block;
-  background: #1e70bf;
-  color: #fff;
-  padding: 10px 24px;
-  margin-top: 16px;
-  text-decoration: none;
-  border-radius: 40px;
+.links {
+  margin-top: 20px;
+}
+
+.links a {
+  margin: 0 12px;
+  color: #ffffff;
   font-weight: 600;
-  transition: background 0.3s ease;
+  border-bottom: 2px solid transparent;
 }
 
-.btn:hover {
-  background: #155a9c;
+.links a:hover {
+  border-color: #ffffff;
 }
 
-/* Sections */
-section {
-  padding: 50px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
+/* =====================
+   Section Headings
+===================== */
 h2 {
   font-size: 2rem;
-  margin-bottom: 16px;
-  color: #0a0f2a;
+  margin-bottom: 20px;
+  color: #0f172a;
+  position: relative;
 }
 
-/* Lists */
-ul {
+h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #2563eb;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+
+/* =====================
+   Text
+===================== */
+p {
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+}
+
+/* =====================
+   Skills Grid
+===================== */
+.grid-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.grid-list li {
+  background: #ffffff;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border-left: 5px solid #06b6d4;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  font-weight: 500;
+}
+
+/* =====================
+   Certifications
+===================== */
+section ul {
   list-style: none;
   margin-top: 10px;
 }
 
-.skills ul li,
-.certifications ul li,
-.linkedin-posts ul li {
-  background: #fff;
-  margin-bottom: 8px;
-  padding: 10px 15px;
-  border-radius: 6px;
-  border: 1px solid #ddd;
+section ul li {
+  background: #ffffff;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border-left: 5px solid #2563eb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
-/* Project Card */
-.project-card {
-  background: #fff;
-  padding: 16px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  margin-bottom: 16px;
+/* =====================
+   Experience Section
+===================== */
+.job {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 35px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  border-top: 6px solid #2563eb;
 }
 
-/* Footer */
+.job h3 {
+  font-size: 1.4rem;
+  color: #0f172a;
+}
+
+.job h3 span {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #475569;
+  margin-left: 10px;
+}
+
+.role {
+  margin-top: 6px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.job ul {
+  margin-top: 14px;
+}
+
+.job ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 18px;
+}
+
+.job ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #06b6d4;
+  font-weight: bold;
+}
+
+/* =====================
+   Footer
+===================== */
 footer {
-  background: #0a0f2a;
-  color: #fff;
+  background: #0f172a;
+  color: #ffffff;
   text-align: center;
-  padding: 16px 0;
-  margin-top: 40px;
+  padding: 20px 10px;
+  margin-top: 60px;
+  font-size: 0.95rem;
 }
 
-footer a {
-  color: #1e90ff;
-  text-decoration: none;
+footer p {
+  opacity: 0.9;
+}
+
+/* =====================
+   Responsive
+===================== */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
 }

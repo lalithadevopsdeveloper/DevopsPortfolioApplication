@@ -1,68 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lalitha | DevOps Cloud Engineer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lalitha Sree Bulusu | Senior DevOps Cloud Engineer</title>
+
+  <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<header class="hero">
-  <div class="hero-content">
-    <h1>Lalitha</h1>
-    <p>DevOps & Cloud Engineer</p>
-    <a href="https://www.linkedin.com/in/lalitha-sree-b-b7a4185a/" target="_blank" class="btn">Connect on LinkedIn</a>
+<header class="header">
+  <div class="container">
+    <h1>Lalitha Sree Bulusu</h1>
+    <p class="subtitle">Senior DevOps & Cloud Engineer</p>
+
+    <div class="links">
+      <a href="mailto:blalithasree@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/lalitha-sree-b-b7a4185a/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/lalithadevopsdeveloper" target="_blank">GitHub</a>
+    </div>
   </div>
 </header>
 
-<section class="about" id="about">
-  <h2>About Me</h2>
-  <p>I am a passionate DevOps & Cloud Engineer with hands-on experience in AWS, Linux, CI/CD pipelines, and Infrastructure as Code. I build scalable, secure, and automated systems on the cloud.</p>
+<section class="container">
+  <h2>Professional Summary</h2>
+  <p>
+    Senior AWS DevOps Engineer with over 6+ years of experience building and operating
+    secure, scalable cloud infrastructure supporting complex, high-impact projects.
+  </p>
+  <p>
+    I manage Kubernetes platforms running microservices across AWS and specialize in
+    GitOps-driven delivery using Argo CD, Infrastructure as Code with Terraform, and
+    Python-based automation to eliminate manual operational work.
+  </p>
+  <p>
+    Experienced in designing secure AWS landing zones, reusable Terraform modules,
+    multi-environment CI/CD pipelines, and production-ready observability and security
+    tooling.
+  </p>
 </section>
 
-<section class="skills" id="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>AWS (EC2, S3, IAM, Route 53, ALB)</li>
-    <li>Terraform & Infrastructure as Code</li>
-    <li>CI/CD: GitHub Actions, Jenkins</li>
-    <li>Linux & Shell Scripting</li>
-    <li>Docker & Kubernetes (basic)</li>
+<section class="container">
+  <h2>Technical Skills</h2>
+  <ul class="grid-list">
+    <li>Kubernetes, Docker, Argo CD</li>
+    <li>Terraform, CloudFormation, IaC</li>
+    <li>GitHub Actions, Jenkins, Git</li>
+    <li>AWS: EC2, EKS, ECS, IAM, VPC, Route 53</li>
+    <li>S3, CloudFront, Lambda, API Gateway</li>
+    <li>Prometheus, Grafana, Splunk</li>
+    <li>Python, Shell Scripting</li>
   </ul>
 </section>
 
-<section class="projects" id="projects">
-  <h2>Projects</h2>
-  <div class="project-card">
-    <h3>Cloud Microservices App</h3>
-    <p>Designed and deployed a microservices-based application using AWS EC2, Docker, Route 53, and Terraform. HTTPS termination via an AWS Application Load Balancer and ACM certificates.</p>
-  </div>
-</section>
-
-<section class="certifications" id="certifications">
+<section class="container">
   <h2>Certifications</h2>
   <ul>
-    <li>AWS Certified Solutions Architect – Associate</li>
-    <li>HashiCorp Certified: Terraform Associate (004)</li>
+    <li>AWS Certified Solutions Architect – Associate (expired)</li>
+    <li>HashiCorp Certified: Terraform Associate (003 / 004)</li>
   </ul>
 </section>
 
-<section class="linkedin-posts" id="linkedin-posts">
-  <h2>Recent LinkedIn Posts</h2>
-  <ul>
-    <li>Explained enabling HTTPS on AWS using ACM & ALB.</li>
-    <li>Shared walkthrough for deploying portfolio site on EC2 + Route 53.</li>
-    <li>Documented progress on Terraform certification journey.</li>
-  </ul>
+<section class="container">
+  <h2>Professional Experience</h2>
+
+  <div class="job">
+    <h3>NBC Universal <span>Jan 2024 – Present</span></h3>
+    <p class="role">Senior DevOps Cloud Engineer (Onsite – USA)</p>
+
+    <ul>
+      <li>Migrated 5 on-prem applications to AWS with 99.9% post-migration uptime</li>
+      <li>Built reusable Terraform modules for Amazon EKS across multiple environments</li>
+      <li>Managed stateful microservices (PostgreSQL, MySQL, RabbitMQ) on EKS</li>
+      <li>Implemented GitHub Actions + Argo CD GitOps pipelines, increasing deployment frequency from weekly to daily</li>
+      <li>Automated EKS upgrades, reducing manual effort by 70%</li>
+      <li>Built Python automations saving ~10 hours/week of manual work</li>
+      <li>Designed observability dashboards using Prometheus, Grafana, Splunk</li>
+      <li>Implemented multi-account Docker image security scanning</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <h3>Takt Time Cloud Services <span>Feb 2021 – Mar 2022</span></h3>
+    <p class="role">DevOps Developer (Offshore – India)</p>
+
+    <ul>
+      <li>Designed AWS landing zone architecture using Terraform</li>
+      <li>Implemented secure IAM, SCPs, CloudTrail, and SSO at organization level</li>
+      <li>Built CI/CD pipelines using Jenkins and Groovy</li>
+      <li>Implemented HashiCorp Vault dynamic secrets</li>
+      <li>Automated infrastructure using Terraform and Ansible</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <h3>Cyient <span>Aug 2008 – Aug 2011</span></h3>
+    <p class="role">Software Engineer</p>
+
+    <ul>
+      <li>Developed 3-tier web applications using ASP.NET and C#</li>
+      <li>Worked on backend databases and web UI development</li>
+      <li>Performed Linux system configuration and support</li>
+    </ul>
+  </div>
+
+</section>
+
+<section class="container">
+  <h2>Education</h2>
+  <p>Bachelor’s in Computer Science — JNTU Hyderabad (2008)</p>
 </section>
 
 <footer>
-  <p>GitHub: <a href="https://github.com/lalithadevopsdeveloper" target="_blank">github.com/lalithadevopsdeveloper</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/lalitha-sree-b-b7a4185a/" target="_blank">Lalitha Sree</a></p>
+  <p>© Lalitha Sree Bulusu | DevOps Cloud Engineer</p>
 </footer>
 
 </body>
