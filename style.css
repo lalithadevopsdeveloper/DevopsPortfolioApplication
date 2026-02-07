@@ -18,7 +18,7 @@ body {
 }
 
 a {
-  color: #0d6efd;
+  color: #0ea5a4;
   text-decoration: none;
 }
 
@@ -30,7 +30,7 @@ a:hover {
    Header
 ===================== */
 .header {
-  background-color: #0d6efd;
+  background-color: #0ea5a4;
   color: #ffffff;
   padding: 60px 20px;
   text-align: center;
@@ -71,8 +71,8 @@ a:hover {
 h2 {
   font-size: 1.8rem;
   margin-bottom: 15px;
-  color: #0d6efd;
-  border-bottom: 3px solid #0d6efd;
+  color: #0ea5a4;
+  border-bottom: 3px solid #0ea5a4;
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -110,7 +110,7 @@ ul li {
 .grid-list li {
   background: #ffffff;
   padding: 15px;
-  border-left: 6px solid #0d6efd;
+  border-left: 6px solid #0ea5a4;
   border-radius: 6px;
 }
 
@@ -136,7 +136,7 @@ ul li {
 }
 
 .role {
-  color: #0d6efd;
+  color: #0ea5a4;
   font-weight: bold;
   margin-bottom: 10px;
 }
